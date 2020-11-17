@@ -1,0 +1,19 @@
+<%- include ('./partials/header') -%>
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="display-3">GitHub Followers</h1>
+	<form action="/github" method="GET">
+		<div class="form-group">
+			<label for="primaryUser">Primary User</label>
+			<input type="text" class="form-control" name="primaryUser" placeholder="Primary User Name">
+		</div>
+		<div class="form-group">
+			<label for="secondaryUser">Secondary User</label>
+			<input type="text" class="form-control" name="secondaryUser" placeholder="Secondary User Name">
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
+</div>
+
+<%- include('./partials/footer') -%>
